@@ -12,7 +12,7 @@
 int main(int argc, char argv[]) {
     if(argc != 3) 
     {
-        printf("USAGE:\n  partb FILENAME words|lines\n");
+        printf("USAGE:\n  partb FILENAME words|lines\n\n");
         exit(1);
     }
 
