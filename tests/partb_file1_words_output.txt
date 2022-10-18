@@ -1,0 +1,2 @@
+9 tests/file1.txt
+Child done

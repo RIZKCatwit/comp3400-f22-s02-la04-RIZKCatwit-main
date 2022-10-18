@@ -1,0 +1,2 @@
+23 tests/file2.txt
+Child done
