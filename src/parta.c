@@ -21,10 +21,8 @@ int main(int argc, char* argv[]) {
 
         if(pid == 0)
         {
-            char* args[]=
-            {
-                "grep","-q",argv[1],"tests/file1.txt", NULL
-            };
+            char* args[]={"grep","-q",argv[1],"tests/file1.txt", NULL};
+           
             int exec_ret = execv("/usr/bin/grep",args);
             if(exec_ret == -1)
             {
