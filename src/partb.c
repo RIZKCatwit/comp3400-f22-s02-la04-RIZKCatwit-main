@@ -22,10 +22,7 @@ int main(int argc, char argv[]) {
         //building the child
         if(c == 0 && strcmp(argv[2], "words") == 0) 
         {
-            char* a[] = 
-            {
-                "wc", "-w", argv[1], NULL
-            };
+            char* a[] = {"wc", "-w", argv[1], NULL};
             int ret = execv("/usr/bin/wc", a);
             if(ret == -1) 
             {
@@ -34,13 +31,7 @@ int main(int argc, char argv[]) {
         }       
     if (c == 0 && strcmp(argv[2], "lines") == 0) 
     {
-      char * args[] = 
-      {
-        "wc",
-        "-l",
-        argv[1],
-        NULL
-      };
+      char * args[] = {"wc", "-l", argv[1], NULL};
       int exec_ret = execv("/usr/bin/wc", args);
       if (exec_ret == -1) 
       { 
